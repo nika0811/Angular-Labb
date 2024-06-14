@@ -1,0 +1,17 @@
+<div *ngFor="let post of posts">
+  <h2>{{ post.title }}</h2>
+  <p>{{ post.content }}</p>
+  <button (click)="onRemovePost(post.id)" 
+          style="border-radius: 20px;
+                 padding: 12px 24px;
+                 background-color: darkgray;
+                 color: white;
+                 border: none;
+                 cursor: pointer;
+                 transition: background-color 0.3s ease, color 0.3s ease;"
+          onmouseover="this.style.backgroundColor='grey';"
+          onmouseout="this.style.backgroundColor='black';"
+  >
+    Remove
+  </button>
+</div>
